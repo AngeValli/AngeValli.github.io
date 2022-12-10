@@ -3,16 +3,12 @@
   "username": "AngeValli",
   "name": "AngeValli",
   "userimg": "https://avatars.githubusercontent.com/u/38351742?v=4",
-  "sort": "updated",
+  "sort": "created",
   "order": "asc",
   "includeFork": false,
-  "theme": "dark.css",
+  "theme": "light.css",
   "types": [
-   "owner"
-  ],
-  "twitter": "AVE13230",
-  "linkedin": "ange-valli-maldonado",
-  "medium": null,
-  "dribbble": null
+   "all"
+  ]
  }
 ]
