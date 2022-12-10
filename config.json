@@ -1,16 +1,48 @@
 [
  {
+  "includeFork": false,
+  "includeSocial": true,
+  "types": [
+   "owner"
+  ],
+  "twitter": "AVE13230",
+  "linkedin": "ange-valli-maldonado",
+  "medium": null,
+  "dribbble": null,
+  "pages": [
+   {
+    "name": "Code",
+    "ID": "page_1",
+    "entries": [],
+    "is_external": false,
+    "external_url": ""
+   },
+   {
+    "name": "LinkedIn",
+    "ID": "page_1",
+    "entries": [],
+    "is_external": true,
+    "external_url": "https://www.linkedin.com/in/ange-valli-maldonado/"
+   },
+   {
+    "name": "About",
+    "ID": "page_2",
+    "entries": [],
+    "is_external": true,
+    "external_url": "https://angevalli.github.io/blog/About/"
+   },
+   {
+    "name": "Colab notebooks",
+    "ID": "page_3",
+    "entries": [],
+    "is_external": true,
+    "external_url": "https://drive.google.com/drive/folders/1QyATMisB0F_AbfMLBO9_K_MB1dB64ziC?usp=sharing"
+   }
+  ],
+  "background": "https://images4.alphacoders.com/932/932271.jpg",
   "username": "AngeValli",
   "name": "AngeValli",
   "userimg": "https://avatars.githubusercontent.com/u/38351742?v=4",
-  "sort": "created",
-  "order": "asc",
-  "includeFork": false,
-  "theme": "light.css",
-  "types": [
-   "all"
-  ],
-  "twitter": "AVE13230",
-  "linkedin": "ange-valli-maldonado"
+  "theme": "dark"
  }
 ]

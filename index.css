@@ -17,7 +17,9 @@ body {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background: var(--bg-color);
+  background: var(--background-left);
+  background-size: cover !important;
+  background-repeat: no-repeat;
   z-index: 999;
   display: flex;
   justify-content: center;
@@ -57,7 +59,19 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  background: var(--background-image) center center;
+  background: transparent;
+  position: fixed;
+  color: #fff !important;
+}
+
+#profile_background {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  background: var(--background-left);
   background-size: cover !important;
   background-repeat: no-repeat;
   position: fixed;
@@ -213,6 +227,7 @@ body {
   width: 100%;
   padding: 8vh 0px;
   text-align: center;
+  position: relative;
 }
 
 #footer a {
@@ -232,6 +247,7 @@ body {
   border-radius: 5px;
   background-size: cover !important;
   background-repeat: no-repeat !important;
+  cursor: pointer;
 }
 
 #profile div {
@@ -329,6 +345,7 @@ body {
   margin: 1vh 0px;
   padding: 0px 1px;
   word-wrap: break-word;
+  word-break: break-all;
 }
 
 .about_section {
@@ -337,6 +354,7 @@ body {
   margin: 2vh 0px;
   font-weight: bold;
   word-wrap: break-word;
+  word-break: break-all;
 }
 
 .bottom_section {
@@ -438,6 +456,35 @@ body {
     text-align: center;
     position: relative;
   }
+
+  #profile_background {
+    width: 100vw;
+    height: 60vh;
+    text-align: center;
+    position: absolute;
+  }
+
+  #loading {
+    width: 100vw;
+    height: 60vh;
+    position: fixed;
+  }  
+
+  #loading_black {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: var(--bg-color);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }  
 
   #display {
     width: 90vw;
@@ -544,16 +591,45 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: var(--text-color);
+}:root {
+  --bg-color: rgb(10, 10, 10);
+  --text-color: #fff;
+  --blog-gray-color: rgb(180, 180, 180);
+  --background-left: linear-gradient(
+    90deg,
+    rgba(10, 10, 10, 0.1),
+    rgb(10, 10, 10, 0.8)
+  ),
+  url("https://images4.alphacoders.com/932/932271.jpg");
 }
-:root {
-  --bg-color: #fff;
-  --text-color: rgb(10, 10, 10);
-  --blog-gray-color: rgb(80, 80, 80);
-  --background-image: linear-gradient(
-      90deg,
-      rgba(10, 10, 10, 0.4),
-      rgb(10, 10, 10, 0.4)
-    ),
-    url("https://images4.alphacoders.com/932/932271.jpg");
-  --background-background: #fff;
+
+#display h1 {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: #fff;
+}
+
+#blog-display h1 {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: #fff;
+}
+
+.projects section {
+  background: rgb(20, 20, 20, 0.5);
+}
+
+#blog_section section {
+  background: rgb(20, 20, 20);
+}
+
+@media (max-width: 800px) {
+  :root {
+    --background-left: linear-gradient(
+        0deg,
+        rgba(10, 10, 10, 1),
+        rgba(10, 10, 10, 0)
+      ),
+      url("https://images4.alphacoders.com/932/932271.jpg") !important;
+  }
 }
