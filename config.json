@@ -11,8 +11,15 @@
   "dribbble": null,
   "pages": [
    {
-    "name": "Code",
+    "name": "Papers",
     "ID": "page_0",
+    "entries": [],
+    "is_external": false,
+    "external_url": ""
+   },
+   {
+    "name": "Code",
+    "ID": "page_1",
     "entries": [],
     "is_external": false,
     "external_url": ""
