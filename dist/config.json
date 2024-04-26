@@ -1,0 +1,62 @@
+[
+ {
+  "includeFork": false,
+  "includeSocial": true,
+  "types": [
+   "owner"
+  ],
+  "twitter": "AVE13230",
+  "linkedin": "ange-valli-maldonado",
+  "medium": null,
+  "dribbble": null,
+  "pages": [
+   {
+    "name": "Papers",
+    "ID": "page_0",
+    "entries": [],
+    "is_external": false,
+    "external_url": ""
+   },
+   {
+    "name": "Code",
+    "ID": "page_1",
+    "entries": [],
+    "is_external": false,
+    "external_url": ""
+   },
+   {
+    "name": "LinkedIn",
+    "ID": "page_1",
+    "entries": [],
+    "is_external": true,
+    "external_url": "https://www.linkedin.com/in/ange-valli-maldonado/"
+   },
+   {
+    "name": "About",
+    "ID": "page_2",
+    "entries": [],
+    "is_external": true,
+    "external_url": "https://angevalli.github.io/blog/About/"
+   },
+   {
+    "name": "Colab notebooks",
+    "ID": "page_3",
+    "entries": [],
+    "is_external": true,
+    "external_url": "https://drive.google.com/drive/folders/1QyATMisB0F_AbfMLBO9_K_MB1dB64ziC?usp=sharing"
+   },
+   {
+    "name": "Teaching Assistant",
+    "ID": "page_4",
+    "entries": [],
+    "is_external": false,
+    "external_url": ""
+   }
+  ],
+  "background": "https://images4.alphacoders.com/932/932271.jpg",
+  "username": "AngeValli",
+  "name": "Ange Valli (Ángel Valli Maldonado)",
+  "userimg": "https://avatars.githubusercontent.com/u/38351742?v=4",
+  "theme": "dark"
+ }
+]
