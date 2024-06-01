@@ -600,7 +600,7 @@ body {
     rgba(10, 10, 10, 0.1),
     rgb(10, 10, 10, 0.8)
   ),
-  url("https://images4.alphacoders.com/932/932271.jpg");
+  url("./IMG_20240526_190920.jpg");
 }
 
 #display h1 {
@@ -630,6 +630,6 @@ body {
         rgba(10, 10, 10, 1),
         rgba(10, 10, 10, 0)
       ),
-      url("https://images4.alphacoders.com/932/932271.jpg") !important;
+      url("./IMG_20240526_190920.jpg") !important;
   }
 }
