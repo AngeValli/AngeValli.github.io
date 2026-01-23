@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,7 +10,29 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
     <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/38351742?v=4" type="image/png"></head>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/38351742?v=4" type="image/png">
+    
+    <style>
+        /* Fixes the text cutting issue */
+        .section_title {
+            word-break: normal !important;
+            overflow-wrap: break-word !important;
+            word-wrap: break-word !important;
+            line-height: 1.4;
+            display: block;
+            width: 100%;
+        }
+        /* Ensures cards expand vertically for long titles */
+        section {
+            height: auto !important;
+            padding: 25px !important;
+        }
+        .projects {
+            display: grid;
+            width: 100%;
+        }
+    </style>
+</head>
 
   <body>
     <div id="loading_black">
@@ -23,90 +47,121 @@
       <div id="userbio" style="display: block;">PhD Candidate in Applied Mathematics</div>
       <div id="about">
         <span style="display:block;"><i class="fas fa-users"></i> &nbsp; Université Paris-Saclay / CentraleSupélec</span>
-        <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
         <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a href="https://angevalli.github.io/">https://angevalli.github.io/</a></span>
         <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Paris</span>
         <span style="display:block;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
         <div class="socials">
         <span style="display:block;"><a href="https://www.twitter.com/AVE13230" target="_blank" class="socials"><i class="fab fa-twitter"></i></a></span>
-        <span style="display:none !important;"><a href="https://www.dribbble.com/null" target="_blank" class="socials"><i class="fab fa-dribbble"></i></a></span>
         <span style="display:block;"><a href="https://www.linkedin.com/in/ange-valli-maldonado/" target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
-        <span style="display:none !important;"><a href="https://www.medium.com/@null/" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span>
         </div>
         </div>
     </div>
     <div id="display">
-      <div><h1 style="position: relative">Papers</h1>
-		   <h2 style="position: relative">2025</h2><div class="projects" id="page_0">
-		   <a href="https://www.researchgate.net/publication/397706340_Distributionally_Robust_Optimization_for_Optimal_Control_problems_with_Pontryagin's_Maximum_Principle" style="width: 100% !important;">
+      <div>
+        <h1 style="position: relative">Papers</h1>
+		   
+        <h2 style="position: relative">2026</h2>
+        <div class="projects" id="page_2026">
+		      <a href="https://hal.science/hal-05441033" style="width: 100% !important;">
             <section>
-                <div class="section_title">Distributionally Robust Optimization for Optimal Control problems with<br>Pontryagin's Maximum Principle</div>
+                <div class="section_title">Optimal control under probabilistic safety constraints</div>
                 <div class="about_section">
-				Ange Valli, Abdel Lisser, Sihem Tebbani
-                <div class="bottom_section">
-				Presented at PGMO Days 2025
+				        Ange Valli, Abdel Lisser, Sihem Tebbani
+                <div class="bottom_section">Working paper</div>
                 </div>
             </section>
-            </a>
-			<a href="https://www.researchgate.net/publication/393463850_A_continuous-time_optimal_control_approach_based_on_Pontryagin's_Maximum_Principle_with_chance_constraints" style="width: 100% !important;">
+          </a>
+        </div>
+
+		   <h2 style="position: relative">2025</h2>
+       <div class="projects" id="page_2025">
+		      <a href="https://hal.science/hal-05422346" style="width: 100% !important;">
             <section>
-                <div class="section_title">A continuous-time optimal control approach based on<br>Pontryagin's Maximum Principle with chance constraints</div>
+                <div class="section_title">Chance-constrained optimal control for autonomous vehicles trajectory</div>
                 <div class="about_section">
-				Ange Valli, Abdel Lisser, Sihem Tebbani
-                </div>
-                <div class="bottom_section">
-				Presented at SMAI 2025 and ICSP 2025
+				        Ange Valli, Abdel Lisser, Sihem Tebbani
+                <div class="bottom_section">Working paper</div>
                 </div>
             </section>
-            </a>
-			<a href="https://tristan2025.org/proceedings/TRISTAN2025_ExtendedAbstract_72.pdf" style="width: 100% !important;">
+          </a>
+		      <a href="https://www.researchgate.net/publication/397706340_Distributionally_Robust_Optimization_for_Optimal_Control_problems_with_Pontryagin's_Maximum_Principle" style="width: 100% !important;">
             <section>
-                <div class="section_title">Continuous-time optimal control for trajectory planning of <br>autonomous vehicles under joint probabilistic constraints.</div>
+                <div class="section_title">Distributionally Robust Optimization for Optimal Control problems with Pontryagin's Maximum Principle</div>
                 <div class="about_section">
-				Ange Valli, Abdel Lisser
-                </div>
-                <div class="bottom_section">
-				Presented at TRISTAN 2025
+				        Ange Valli, Abdel Lisser, Sihem Tebbani
+                <div class="bottom_section">Presented at PGMO Days 2025</div>
                 </div>
             </section>
-			</a>
+          </a>
+			    <a href="https://www.researchgate.net/publication/393463850_A_continuous-time_optimal_control_approach_based_on_Pontryagin's_Maximum_Principle_with_chance_constraints" style="width: 100% !important;">
+            <section>
+                <div class="section_title">A continuous-time optimal control approach based on Pontryagin's Maximum Principle with chance constraints</div>
+                <div class="about_section">
+				        Ange Valli, Abdel Lisser, Sihem Tebbani
+                </div>
+                <div class="bottom_section">Presented at SMAI 2025 and ICSP 2025</div>
+            </section>
+          </a>
+			    <a href="https://tristan2025.org/proceedings/TRISTAN2025_ExtendedAbstract_72.pdf" style="width: 100% !important;">
+            <section>
+                <div class="section_title">Continuous-time optimal control for trajectory planning of autonomous vehicles under joint probabilistic constraints.</div>
+                <div class="about_section">
+				        Ange Valli, Abdel Lisser
+                </div>
+                <div class="bottom_section">Presented at TRISTAN 2025</div>
+            </section>
+			    </a>
 			</div>
-		   <h2 style="position: relative">2024</h2><div class="projects" id="page_0">
-            </a><a href="https://www.doi.org/10.1504/IJVAS.2025.10072190" style="width: 100% !important;">
+
+		   <h2 style="position: relative">2024</h2>
+       <div class="projects" id="page_2024">
+          <a href="https://www.doi.org/10.1504/IJVAS.2025.10072190" style="width: 100% !important;">
             <section>
                 <div class="section_title">Continuous-time optimal control for trajectory planning under uncertainty</div>
                 <div class="about_section">
-				Ange Valli, Shangyuan Zhang, Abdel Lisser
+				        Ange Valli, Shangyuan Zhang, Abdel Lisser
                 </div>
-                <div class="bottom_section">
-				Presented at PGMO Days 2024, published in International Journal of Vehicle Autonomous Systems in 2025
-                </div>
+                <div class="bottom_section">Presented at PGMO Days 2024, published in International Journal of Vehicle Autonomous Systems in 2025</div>
             </section>
-            </a></div></div>
+          </a>
+       </div>
+      </div>
+    </div>
+
     <script type="text/javascript">
       setTimeout(function() {
-        document.getElementById("loading").classList.add("animated");
-        document.getElementById("loading").classList.add("fadeOut");
-        document.getElementById("loading_black").classList.add("animated");
-        document.getElementById("loading_black").classList.add("fadeOut");
+        document.getElementById("loading").classList.add("animated", "fadeOut");
+        document.getElementById("loading_black").classList.add("animated", "fadeOut");
         setTimeout(function() {
-          document.getElementById("loading").classList.remove("animated");
-          document.getElementById("loading").classList.remove("fadeOut");
           document.getElementById("loading").style.display = "none";
-          document.getElementById("loading_black").classList.remove("animated");
-          document.getElementById("loading_black").classList.remove("fadeOut");
           document.getElementById("loading_black").style.display = "none";
         }, 800);
       }, 1500);
     </script>
   
-
-<script>const page_0 = new MagicGrid({
-      container: "#page_0",
-      animate: false,
-      gutter: 30, // default gutter size
-      static: true,
-      useMin: false,
-      maxColumns: 1,
-      useTransform: true
-    });$("document").ready(() => {page_0.listen();});</script></body></html>
+    <script>
+      // Function to initialize MagicGrid for all containers
+      function initGrids() {
+        const containers = ["#page_2026", "#page_2025", "#page_2024"];
+        containers.forEach(selector => {
+          if (document.querySelector(selector)) {
+            const grid = new MagicGrid({
+              container: selector,
+              animate: false,
+              gutter: 30,
+              static: true,
+              useMin: false,
+              maxColumns: 1,
+              useTransform: true
+            });
+            grid.listen();
+          }
+        });
+      }
+      
+      $(document).ready(() => {
+        initGrids();
+      });
+    </script>
+  </body>
+</html>
