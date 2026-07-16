@@ -176,7 +176,8 @@ body {
   font-family: "Questrial", sans-serif;
 }
 
-#blog p {
+#blog p,
+#general_info p {
   font-size: 17px;
   line-height: 25px;
   word-spacing: 1.2px;

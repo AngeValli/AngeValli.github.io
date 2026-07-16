@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Reports PhD thesis</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../index.css">
+</head>
+<body>
+  <div id="loading">
+    <div id="spinner"></div>
+  </div>
+  <a href="/" class="go_back"><i class="fas fa-arrow-left"></i></a>
+  <div id="background_overlay"></div>
+  <div id="background" style="background: url(top_image.jpeg) center;"></div>
+  
+  <table id="profile_blog">
+    <tbody>
+      <tr>
+        <td style="width:8vw;">
+          <div id="profile_img_blog"></div>
+        </td>
+        <td style="width:52vw;">
+          <div id="username_blog"></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <div id="blog-display">
+    <h1 id="defense_report">Defense report</h1>
+    <div id="report_defense_content">
+      <p>M. Ange Valli delivered a clear and well-structured presentation of his PhD research on solving optimization and optimal control problems subject to chance constraints in the stochastic and distributionally robust cases and on using neural networks to solve stochastic geometric optimization problems and to approximate solutions of nonlinear dynamical systems. The committee appreciated that the candidate managed to present the rich and mathematically dense content of his dissertation in a pedagogical way.</p>
+
+      <p>M. Ange Valli responded convincingly to the numerous questions raised by the committee, addressing various aspects of his thesis, including modeling assumptions, numerical aspects, theoretical questions and promising perspectives for future research. His answers demonstrated a thorough understanding of the state of the art and a strong mastery of his research topic.</p>
+
+      <p>For these reasons, the committee thinks that M. Ange Valli has all the qualities and competencies to be an excellent researcher and teacher. The committee unanimously pronounces the admission of M. Ange Valli to the degree of Doctor in Informatique mathématique of Université Paris-Saclay.</p>
+    </div>
+    <h1 id="pre_defense_reports">Pre-defense reports</h1>
+    <h2 id="report_1">1st report</h2>
+    <div id="report_1_content">
+      <p><strong>Rapport sur le projet de thèse de M. Ange VALLI :</strong><br>
+      « Contributions à la résolution de problèmes d'optimisation et de contrôle optimal soumis à des perturbations stochastiques à l'aide de réseaux de neurones. »</p>
+
+      <p>La thèse de doctorat soumise par M. Ange VALLI s'inscrit dans le domaine du contrôle optimal en contexte d'incertitude, plus précisément en présence de contraintes probabilistes ou pour établir une robustesse vis-à-vis de la distribution. Elle porte principalement sur le développement de nouvelles approches, méthodes et algorithmes basés sur des techniques modernes d'apprentissage automatique et de réseaux de neurones. Plusieurs techniques de reformulation sont utilisées pour aboutir à des problèmes convexes ou biconvexes, adaptées à la résolution de différents types de problèmes et d'applications impliquant des contraintes probabilistes. Les travaux présentés utilisent des outils et des techniques modernes d'optimisation convexe, de contrôle optimal et d'apprentissage automatique. Ils apportent des éclaircissements et des réponses théoriques et numériques sur plusieurs points et proposent des approches très prometteuses pour des problèmes importants.</p>
+
+      <p>La thèse propose des éléments nouveaux et originaux, et la plupart des approches présentées sont accompagnées, quand nécessaire, de résultats, d'illustrations et de simulations numériques démontrant la viabilité et l'efficacité des méthodes et approches sous-jacentes. Nous présentons ci-après une description détaillée du contenu de ce travail conséquent, qui comprend huit chapitres et une bibliographie complète.</p>
+
+      <p><strong>Le premier chapitre</strong> correspond à une introduction générale qui précise le cadre général de cette recherche : il en présente les principales motivations, le contexte scientifique et les applications visées. Il fait également un résumé des contributions originales et donne la liste complète des publications, des prépublications et des communications qui se rapportent à ce travail.</p>
+
+      <p><strong>Le second chapitre</strong> correspond à un travail bibliographique et constitue l'état de l'art des principaux thèmes abordés dans la thèse. Il passe en revue plusieurs contributions marquantes de la littérature scientifique et identifie certains défis et problèmes encore ouverts. D'autres éléments de bibliographie sont également intégrés dans chacun des autres chapitres, au plus près des sujets traités.</p>
+
+      <p><strong>Le chapitre 3</strong> présente une formulation du problème de la planification de trajectoires de référence de véhicules autonomes en contexte d'incertitude. Ce modèle correspond à un problème de contrôle optimal avec un coût intégral sous contraintes en probabilité. Ce dernier est ensuite reformulé de manière équivalente comme un problème de contrôle optimal sur le cône du second ordre, déterministe. Ce problème est alors résolu par des méthodes directes (après une discrétisation, on se ramène à un problème d'optimisation en dimension finie), et l'efficacité de l'approche probabiliste est évaluée par des expériences numériques sur différents scenari générés à l'aide d'un logiciel commercial utilisé dans l'industrie. Dans ce chapitre comme dans le suivant, le candidat mène une étude numérique importante : il analyse en particulier l'influence du modèle continu et la sensibilité numérique par rapport aux paramètres.</p>
+
+      <p><strong>Le quatrième chapitre</strong> aborde la résolution du même problème de contrôle optimal par une méthode indirecte, fondée sur le principe du maximum de Pontryagine (les conditions d'optimalité du premier ordre sont établies dans l'espace initial en dimension infinie). Le problème sous contraintes en probabilité est reformulé comme un système d'équations différentielles ordinaires, constituant un problème aux deux bouts dont les conditions initiales des variables adjointes sont inconnues. Comme pour une méthode de tir, il s'agit de déterminer les variables adjointes initiales. Pour initialiser la méthode, des valeurs initiales pour les variables adjointes sont d'abord obtenues par la méthode directe, puis affinées par l'algorithme de Levenberg-Marquardt. Des expériences numériques comparent les deux approches et mettent en évidence les avantages de la méthode indirecte, notamment sa capacité à préserver la formulation en temps continu du problème.</p>
+
+      <p><strong>Le chapitre 5</strong> propose un panorama approfondi de l'optimisation sous contraintes en probabilité et de l'optimisation robuste vis-à-vis de la distribution, des résultats théoriques fondateurs jusqu'aux applications pratiques récentes. Le problème de planification de trajectoires est reformulé comme un problème de commande optimale sous contraintes probabilistes conjointes, intégrant des fonctions copules afin de modéliser explicitement la structure de dépendance entre les variables aléatoires.</p>
+
+      <p><strong>Dans le chapitre 6,</strong> M. Ange VALLI développe des approches neurodynamiques pour les problèmes d'optimisation conjointe géométrique sous contraintes en probabilité et robustes vis-à-vis de la distribution. Après une reformulation en problèmes d'optimisation convexe ou biconvexe selon les situations, les conditions d'optimalité du premier ordre engendrent un système d'équations différentielles ordinaires et celui-ci est résolu par un réseau de neurones récurrents pour les cas convexes, et par un duplex neurodynamique à deux échelles de temps pour les cas biconvexes. Des réseaux de neurones récurrents conditionnels sont introduits pour tirer parti de la flexibilité des architectures récurrentes, permettant de résoudre plusieurs instances d'un même problème avec un unique entraînement. Les expériences numériques, portant sur des problèmes d'optimisation de forme et de réseaux, donnent des résultats très prometteurs : le duplex neurodynamique se révèle aussi performant que les meilleures méthodes existantes sur une instance unique, et supérieur à celles-ci dans un contexte multi-instances.</p>
+
+      <p><strong>Le chapitre 7</strong> explore l'utilisation des réseaux de neurones informés par la physique (PINN) pour la résolution de systèmes d'équations différentielles ordinaires de grande dimension, dans le cadre de problèmes de contrôle optimal. Ces approches sont maintenant reconnues pour leur efficacité pour la résolution d'EDO et de problèmes aux deux bouts. Les conditions nécessaires d'optimalité donnent lieu à des systèmes d'EDO et des techniques d'apprentissage automatique basées sur la méthode de Stein pour l'approximation des gradients sont mises en œuvre pour les résoudre. Les expériences numériques présentées, bien que de nature académique, montrent clairement que cette approche accélère la convergence de l'apprentissage en maintenant une très grande qualité des solutions obtenues.</p>
+
+      <p><strong>Le dernier chapitre</strong> conclut ce manuscrit en synthétisant les principaux apports de la thèse et en dégageant des perspectives de recherche réalistes et intéressantes pour ces travaux.</p>
+
+      <p>Du point de vue global, les résultats de cette thèse sont d'importance à la fois en termes de développement de nouvelles approches et de méthodes et du point de vue pratique. La thèse propose plusieurs simulations et expériences numériques très proches des applications réelles. Il s'agit, de mon point de vue, de contributions significatives avec de nouveaux résultats et de nouvelles approches très prometteuses.</p>
+
+      <p>En lien avec la thèse, deux articles sont acceptés dans des revues de très grande qualité : un dans « International Journal of Vehicle Autonomous Systems » et l'autre dans « Computers & Operations Research ». Deux autres travaux très intéressants sont en révision ou en cours de finalisation et je n'ai aucun doute sur leur qualité. Ce-ci confirme l'ampleur du travail réalisé et garantit la qualité de cette thèse.</p>
+
+      <p>Le document bénéficie d'une très bonne organisation du matériel et d'une présentation claire des aspects mathématiques et numériques, contenant à la fois une description de l'état de l'art et une présentation sans ambiguïté des contributions de la thèse. Tout au long du manuscrit, le développement mathématique est clair et techniquement rigoureux.</p>
+
+      <p>M. Ange VALLI démontre, dans cette thèse, une connaissance approfondie de la littérature et une grande maîtrise d'outils mathématiques en lien avec les probabilités, les méthodes numériques pour le contrôle optimal, l'optimisation sous contraintes en probabilité, les dernières méthodes d'apprentissage automatique et de réseaux de neurones. Il démontre également une bonne capacité à produire des recherches de très haute qualité.</p>
+
+      <p>Je recommande donc, sans aucune réserve, l'acceptation de ce travail comme thèse de doctorat.</p>
+    </div>
+    
+    <h2 id="blog_sub_title1">2nd report</h2>
+    <div id="report_2_content">
+      <p>To Whom It May Concern:</p>
+
+      <p>It is my pleasure to write this evaluation report on Ange Valli's thesis entitled "Contributions to Solving Optimization and Optimal Control Problems Subject to Stochastic Disturbances Using Neural Networks". For the reasons outlined below, I strongly recommend this thesis to be accepted in fulfilment of the requirements for the Ph.D. degree of the University Paris Saclay in Mathematics and Informatics.</p>
+
+      <p>The main topic of this thesis is to solve optimal control problems with random variables formulated as chance-constrained stochastic programming problems or distributionally robust optimization problems. This thesis also studies how to utilize neural networks to reformulate and solve optimization problems with chance constraints and systems of ordinary differential equations.</p>
+
+      <p>The thesis has five main chapters, which I will now review.</p>
+
+      <p><strong>Direct method for chance-constrained optimal control models:</strong> This chapter is motivated by a practical problem related to autonomous vehicles. This chapter proposes an optimal control chance-constrained optimization model for trajectory planning, and derives a second-order cone reformulation of the chance constraints under the assumption of normal distribution for the random variables. A numerical study comparing deterministic and stochastic formulation attests the benefits of the model. I have a few comments and questions about this chapter:</p>
+      <ol>
+          <li>The meaning of the chance constraint (3.6) is unclear to me, in particular its left side. What does |x<sub>t</sub><sup>tgt</sup> - x<sub>t</sub> + y<sub>t</sub><sup>tgt</sup> - y<sub>t</sub>| represent? Instead of P(|x<sub>t</sub><sup>tgt</sup> - x<sub>t</sub> + y<sub>t</sub><sup>tgt</sup> - y<sub>t</sub>| &ge; d<sub>min</sub>) should the constraint not be P(|x<sub>t</sub><sup>tgt</sup> - x<sub>t</sub>| + |y<sub>t</sub><sup>tgt</sup> - y<sub>t</sub>| &ge; d<sub>min</sub>)?</li>
+          <li>The tractability of the reformulation is based on a specific probability distribution. I would like to know the practical motivation underlying the choice of the normal distribution, to see if the proposed modeling approach, reformulation, and solution can accommodate other distributions, and to analyze how sensitive the results are to the choice of the distribution.</li>
+          <li>The following sentence (p.39) is unclear to me: "We can conclude that eliminating the deterministic model is preferable to using stochastic models".</li>
+      </ol>
+
+      <p><strong>Indirect method for chance-constrained optimal control models:</strong> This chapter considers the same autonomous vehicle trajectory problem as in Chapter 4 and proposes a so-called indirect solution method based on Pontryagin's Maximum Principle (PMP) to solve the optimal control chance-constrained optimization model. The model is formulated as a system of ordinary differential equations and includes a chance constraint. A deterministic approach is proposed for rewriting the chance constraint and assumes normal distribution for random variables. This chapter provides a rigorous continuous-time treatment of the chance-constrained optimal control problem, derives the necessary optimality conditions through Pontryagin's Maximum Principle, and gives analytical insight into the structure of the optimal solution rather than relying exclusively on numerical discretization. Numerical experiments compare the indirect and direct approaches and show that the PMP-based formulation preserves the continuous-time nature of the problem, produces smoother control policies, and delivers the targeted reliability level. I have a few comments and questions about this chapter:</p>
+      <ol>
+          <li>The chance constraint (4.14) considered in this chapter is written differently from the one (3.6) in Chapter 4. The formulation (4.14) is in my opinion preferable. I would like some clarifications on this.</li>
+          <li>Related to the above point, the chance constraint (4.14) is reformulated as (3.6) on page 57. There is an issue here as constraint (3.6) is not equivalent to (4.14): the feasible set of (4.14) is strictly included in that of (3.6). However, on page 57, third paragraph, the following is stated: "Let's consider the following reformulation for chance constraint (4.14)". The first equation following this statement is (3.6) which is not equivalent to (4.14).</li>
+          <li>The proposed approach relies on the estimation of the unknown initial costates using solutions obtained from the direct method. Does the indirect method remain applicable if high-quality solutions obtained from the direct approach are not available and/or if the direct method converges to a poor local solution?</li>
+      </ol>
+
+      <p><strong>Distributionally chance-constrained optimal control with copulas:</strong> Considering the chance-constrained optimal control framework developed in the previous two chapters, this chapter (i) assumes now that the probability distribution of the random variables is imperfectly known and proposes a distributionally robust optimization model, and (ii) utilizes Gumbel-Hougaard copulas to model the dependency structure among random variables. Additionally, this chapter also includes a review of the literature on traditional and distributionally robust chance constraints. Numerical experiments illustrate the impact of the copula-based dependence modeling on the trajectory-planning decisions and demonstrate the applicability of the proposed framework to safety-critical control problems. I have a few comments and questions about this chapter:</p>
+      <ol>
+          <li>Same question and observation as in Chapter 4: see equations (5.18) and (5.19).</li>
+          <li>The analysis relies on a specific copula family (Gumbel-Hougaard). Can you motivate this choice from a practical and computational perspective? Since different copulas capture different forms of dependence, particularly in the tails of the distribution, a discussion of the sensitivity of the results to the copula choice and parameter estimation procedure would be a nice addition.</li>
+      </ol>
+
+      <p><strong>Neurodynamic approach for distributionally robust joint chance-constrained geometric optimization problem:</strong> This chapter develops neurodynamic approaches for the numerical solution of distributionally robust joint chance-constrained geometric optimization problems. The combination of optimization theory and neural networks is original and extends classical neurodynamic optimization frameworks to challenging stochastic optimization models. Ambiguity is defined using moments and several convex and biconvex reformulations -- depending on the assumptions on the dependence structure and support of the uncertain parameters - are proposed. For convex reformulations, the Karush-Kuhn-Tucker (KKT) conditions are embedded into a recurrent neural network whose equilibrium points correspond to optimal solutions. For biconvex formulations, the chapter proposes a neurodynamic duplex consisting of coupled recurrent neural networks, augmented with particle swarm optimization and wavelet mutation operators to improve convergence properties. The numerical experiments show that the proposed neural-network-based solvers achieve a solution quality comparable to state-of-the-art optimization methods and give the possibility to solve multiple problem instances after training. This latter feature highlights a key possible advantage of learning-based optimization approaches over traditional solvers, namely the possibility of amortizing computational effort across many problem instances. I have a few comments and questions about this chapter:</p>
+      <ol>
+          <li>Additional experiments on larger problem instances would help assess the practical limits and scalability of the methodology.</li>
+          <li>The proposed approach combines multiple algorithmic components recurrent neural networks, particle swarm optimization, wavelet mutation operators, and two-time-scale dynamics --, which makes it very difficult to decipher to which extent any of those is beneficial. Additionally, the parameterization of some of these algorithmic ingredients (mutation operators) is notoriously challenging. This raises questions about the time needed to fine-tune these methods and whether a parameterization for a certain problem (class) is actually transferable.</li>
+      </ol>
+
+      <p><strong>Physics-informed neural networks for modeling ordinary differential equations:</strong> This chapter studies how physics-informed neural networks (PINN) for solving systems of ordinary differential equations arising in optimization and optimal control. The chapter develops a PINN framework that embeds the differential equations into the loss function, with the objective of learning solutions without relying on traditional mesh-based discretization methods. A gradient approximation based on Stein's method is utilized in the training phase. Numerical experiments suggest that the proposed PINN framework can accurately approximate solutions of large-scale dynamical systems while reducing computational effort. My main question is about the advantages of the proposed PINN framework relative to established numerical methods for large-scale differential equations. How does the proposed PINN approach compare against such methods in terms of accuracy, robustness, and computational efficiency? Additionally, it would be worth verifying how sensitive the results are with respect to the estimated hyperparameters.</p>
+
+      <p>In conclusion, I strongly recommend that Ange Valli's thesis entitled "Contributions to Solving Optimization and Optimal Control Problems Subject to Stochastic Disturbances Using Neural Networks" be accepted in fulfilment of the requirements for the Ph.D. degree of the University Paris Saclay in Mathematics and Informatics.</p>
+    </div>
+
+  <script type="text/javascript">
+    setTimeout(function() {
+      document.getElementById("loading").classList.add("animated");
+      document.getElementById("loading").classList.add("fadeOut");
+      setTimeout(function() {
+        document.getElementById("loading").classList.remove("animated");
+        document.getElementById("loading").classList.remove("fadeOut");
+        document.getElementById("loading").style.display = "none";
+      }, 800);
+    }, 1500);
+
+    $.getJSON("../../config.json", function(user) {
+      var icon = document.createElement("link");
+      icon.setAttribute("rel", "icon");
+      icon.setAttribute("href", user[0].userimg);
+      icon.setAttribute("type", "image/png");
+      document.getElementsByTagName("head")[0].appendChild(icon);
+      
+      document.getElementById("profile_img_blog").style.background = `url('${user[0].userimg}') center center`;
+      document.getElementById("username_blog").innerHTML = `<span style="display:${user[0].name == null || !user[0].name ? "none" : "block"};">${user[0].name}</span>@${user[0].username}<b id="blog_time"></b>`;
+
+      if (user[0].theme == "dark.css") {
+        document.querySelector("#background_overlay").style.background = "linear-gradient(0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.1))";
+      } else {
+        document.querySelector("#background_overlay").style.background = "linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1))";
+      }
+    });
+  </script>
+</body>
+</html>
