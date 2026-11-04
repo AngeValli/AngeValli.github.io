@@ -1,76 +1,66 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../../index.css"></head>
-  <body>
-    <div id="loading">
-      <div id="spinner"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Ange Valli</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+  <link rel="stylesheet" href="../../index.css">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/38351742?v=4" type="image/png">
+</head>
+<body class="">
+  <a href="../../index.html" class="go_back" aria-label="Back to home"><span aria-hidden="true">&#8592;</span></a>
+  <div id="background" aria-hidden="true"></div>
+  <div id="background_overlay" aria-hidden="true"></div>
+  <main id="blog-display">
+<h1 id="blog_title">About</h1>
+
+    <div id="general_info">
+      <p id="para_info" style="text-align:justify">
+        I am 29 years old. I am French and Spanish. I was born and raised in <a href="https://www.portsaintlouis.fr/">Port-Saint-Louis-Du-Rhône</a>, near Marseille, France.
+      </p>
     </div>
-    <a href="/" class="go_back"><i class="fas fa-arrow-left"></i></a>
-    <div id="background_overlay"></div>
-    <div id="background" style="background: url(top_image.jpeg) center;"></div>
-    <table id="profile_blog">
-      <tbody>
-        <tr>
-          <td style="width:8vw;"><div id="profile_img_blog"></div></td>
-          <td style="width:52vw;">
-            <div id="username_blog"></div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <div id="blog-display">
-      <h1 id="blog_title">About</h1>
-      <h2 id="blog_sub_title">Opportunities</h2>
-      <div id="blog"><p id="para_0_original">PhD Candidate in Optimal Control & Machine Learning at Université Paris-Saclay, CentraleSupélec. <br>
-	  Worked as Quantitative Research Analyst contractor at BNP Paribas, on equity derivatives. Interested by algorithmic trading and investment strategies. <br>
-	  Nationalities : French, Spanish. 26 y.o. Car and motorcycle licenses.<br>
-	  <br>
-	  PhD Follow-up committee : <a href="https://ckyc.rc.um.edu.mo/people/academic-staff/janny-m-y-leung-phd/">Prof. JANNY M. Y. LEUNG<a>, <a href="https://l2s.centralesupelec.fr/u/veque-veronique/">Prof. VÉRONIQUE VÈQUE<a>
-	  <br>
-<br>
- <a href="https://drive.google.com/drive/folders/1QyATMisB0F_AbfMLBO9_K_MB1dB64ziC?usp=sharing">Google Colab</a> <br>
- <a href="https://www.linkedin.com/in/ange-valli-maldonado/">LinkedIn</a> <br>
- <a href="https://github.com/AngeValli">GitHub</a></p></div>
-    <script type="text/javascript">
-      setTimeout(function() {
-        document.getElementById("loading").classList.add("animated");
-        document.getElementById("loading").classList.add("fadeOut");
-        setTimeout(function() {
-          document.getElementById("loading").classList.remove("animated");
-          document.getElementById("loading").classList.remove("fadeOut");
-          document.getElementById("loading").style.display = "none";
-        }, 800);
-      }, 1500);
-      $.getJSON("../../config.json", function(user) {
-        var icon = document.createElement("link");
-        icon.setAttribute("rel", "icon");
-        icon.setAttribute("href", user[0].userimg);
-        icon.setAttribute("type", "image/png");
-        document.getElementsByTagName("head")[0].appendChild(icon);
-        document.getElementById(
-          "profile_img_blog"
-        ).style.background = `url('${user[0].userimg}') center center`;
-        document.getElementById(
-          "username_blog"
-        ).innerHTML = `<span style="display:${
-          user[0].name == null || !user[0].name ? "none" : "block"
-        };">${user[0].name}</span>@${user[0].username}<b id="blog_time"></b>`;
 
-        if ((user[0].theme = "dark.css")) {
-          document.querySelector("#background_overlay").style.background =
-            "linear-gradient(0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.1))";
-        } else {
-          document.querySelector("#background_overlay").style.background =
-            "linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1))";
-        }
-      });
-    </script>
-  
+    <h2 id="CV">Curriculum</h2>
+    <div class="content-group">
+	  <p  id="para_ntu" style="text-align:justify">
+	  Between mid-July and mid-August 2026, I was a visiting scholar at <a href="https://www.ntu.edu.sg/">Nanyang Technological University, Singapore</a>,
+	  at the <a href="https://www.ntu.edu.sg/spms">School of Physical and Mathematical Sciences</a>, <a href="https://www.ntu.edu.sg/spms/about-us/mathematics">Division of Mathematical Sciences</a>,
+	  in the research group of <a href="https://personal.ntu.edu.sg/ariel.neufeld/">Prof. Ariel Neufeld</a>. I worked with <a href="https://wuwudawen.github.io/">Dr. Dawen Wu</a> on solving high-dimensional systems of ordinary differential equations using physics-informed neural networks.
+      </p>
+      <p id="para_0_original" style="text-align:justify">
+        I conducted my PhD under the supervision of <a href="https://l2s.centralesupelec.fr/u/lisser-abdel/">Prof. Abdel Lisser</a> and <a href="https://l2s.centralesupelec.fr/u/tebbani-sihem/">Prof. Sihem Tebbani</a> at CentraleSupélec.
+		I defended my PhD on July 2, 2026. The reporters of my PhD are <a href="https://business.gwu.edu/miguel-lejeune">Prof. Miguel Lejeune, George Washington University</a> and <a href="https://haddou.perso.math.cnrs.fr/">Prof. Mounir Haddou, INSA Rennes</a>. The video recording of my presentation during my PhD thesis defense is available <a href="https://www.youtube.com/watch?v=0G-_UKAEmNk">here</a>.
+		The president of the jury was <a href="https://sites.google.com/site/antoinesgirard/">Antoine Girard, Senior Researcher at CNRS</a> and the other jury members were <a href="https://www.francescamaggioni.it/index.php?id=home">Prof. Francesca Maggioni, Università degli Studi di Bergamo</a> and <a href="https://gr.xjtu.edu.cn/en/web/jialiu/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B">Prof. Jia Liu, Xi'an Jiaotong University</a>.
+		The follow-up committee for my PhD thesis consisted of <a href="https://ckyc.rc.um.edu.mo/people/academic-staff/janny-m-y-leung-phd/">Prof. Janny M. Y. Leung, University of Macau</a> and <a href="https://l2s.centralesupelec.fr/u/veque-veronique/">Prof. Véronique Vèque, CentraleSupélec</a>.
+		More details about my PhD are available <a href="defense_reports.html">here</a>, including the defense and pre-defense reports of my thesis.
+		Papers written and talks given during my PhD are presented <a href="../../Papers.html">here</a>.
+		Professional services given during my PhD are presented <a href="../Professional services/index.html">here</a>.
+		I worked as a teaching assistant at Université Paris-Saclay for academic years 2023/2024 and 2024/2025. Materials can be found <a href="../Teaching Assistant/index.html">here</a>.
+	  </p>
+      <p id="experience" style="text-align: justify; margin-bottom: 8px;">
+        I worked as a quantitative analyst contractor at BNP Paribas CIB, within the quantitative research department, focusing on equity derivatives.
+        I hold a master’s degree in <a href="https://formations.univ-gustave-eiffel.fr/en/our-studies/detail?tx_formations_formationslistenplugin%5Baction%5D=showEN&tx_formations_formationslistenplugin%5Bcontroller%5D=Formations&tx_formations_formationslistenplugin%5BparcoursId%5D=180&cHash=95d0d90082c1c8bbcc201eead64e362f">Mathematics for Finance and Data</a> (formerly DEA Lamberton),
+		jointly offered by Université Gustave Eiffel and Université Paris-Est Créteil, and co-accredited with <a href="https://ecoledesponts.fr/en">École nationale des ponts et chaussées</a>, obtained in 2022.
+		This program included an internship at <a href="https://nextgatetech.com/">Next Gate Tech</a>, a fintech company based in Luxembourg, where I worked as a quantitative developer.
+        I also hold a master’s degree in <a href="https://synapses.ensta-paris.fr/catalogue/parcours/717/3A-PAR-IA-3a-parcours-intelligence-artificielle">artificial intelligence</a>
+		from <a href="https://ensta.fr/en">ENSTA</a>, obtained in 2021, during which I completed an internship at Generali France where I worked as a data scientist.
+      </p>
+    </div>
 
-</body></html>
+    <h2 id="blog_sub_sub_title3">Github stats</h2>
+    <img src="https://github-readme-stats.vercel.app/api?username=AngeValli&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=2B5BBD&icon_color=1124BB&text_color=A1A1A1&bg_color=0,000000,130F40" alt="Ange Valli's Github Stats"/>
+    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=AngeValli&show_icons=true&locale=en&layout=compact&theme=chartreuse-dark" alt="Ange Valli's languages"/>
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=AngeValli&theme=tokyonight" alt="Ange Valli's streak"/><br>
+    <img src="https://img.shields.io/badge/dynamic/json?logo=github&label=GitHub+Followers&labelColor=282c34&color=181717&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3DAngeValli&longCache=true" alt="Ange Valli's followers"/>
+    <img src="https://img.shields.io/github/stars/AngeValli?label=Stars" alt="Ange Valli's stars">
+
+    <h2 id="volunteering">Volunteering</h2>
+    <div class="content-group">
+      <p>
+        Since June 2024, I am a board director of <a href="https://www.iesf.fr/">the National Council of Engineers and Scientists of France</a>. I was the secretary general of the organization until June 2025.
+      </p>
+    </div>
+  </main>
+</body>
+</html>

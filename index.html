@@ -1,25 +1,20 @@
-		<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AngeValli</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
-    <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/38351742?v=4" type="image/png"></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ange Valli</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/38351742?v=4" type="image/png">
+</head>
+<body class="home">
 
-  <body>
-    <div id="loading_black">
-    <div id="loading">
-      <div id="spinner"></div>
-    </div>
-    </div>
-    <div id="profile_background"></div>
-    <div id="profile">
-      <div id="profile_img" onclick="location.href='index.html';" style="background: url(https://avatars.githubusercontent.com/u/38351742?v=4) center;"></div>
-      <div id="username"><span style="display:block;">Ange Valli</span><a href="https://github.com/AngeValli">@AngeValli</a></div>
+  <div id="background" aria-hidden="true"></div>
+  <div id="background_overlay" aria-hidden="true"></div>
+  <main id="blog-display">
+<header id="profile"><a id="profile_img" href="index.html" aria-label="Ange Valli — home"></a>
+      <div class="profile-details"><div id="username"><span style="display:block;">Ange Valli</span><a href="https://github.com/AngeValli">@AngeValli</a></div>
       <div id="userbio" style="display: block;"> </div>
       <div id="about">
         <span style="display:none;"><i class="fas fa-users"></i> &nbsp; </span>
@@ -28,15 +23,13 @@
         <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Paris</span>
         <span style="display:none;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
         <div class="socials">
-        <span style="display:block;"><a href="https://x.com/ValliMaldonado" target="_blank" class="socials"><i class="fab fa-twitter"></i></a></span>
-        <span style="display:none !important;"><a href="https://www.dribbble.com/null" target="_blank" class="socials"><i class="fab fa-dribbble"></i></a></span>
-        <span style="display:block;"><a href="https://www.linkedin.com/in/ange-valli-maldonado/" target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
-        <span style="display:none !important;"><a href="https://www.medium.com/@null/" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span>
+        <span style="display:block;"><a href="https://x.com/ValliMaldonado" target="_blank" rel="noopener noreferrer" class="socials"><i class="fab fa-twitter"></i></a></span>
+        <span style="display:none !important;"><a href="https://www.dribbble.com/null" target="_blank" rel="noopener noreferrer" class="socials"><i class="fab fa-dribbble"></i></a></span>
+        <span style="display:block;"><a href="https://www.linkedin.com/in/ange-valli-maldonado/" target="_blank" rel="noopener noreferrer" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
+        <span style="display:none !important;"><a href="https://www.medium.com/@null/" target="_blank" rel="noopener noreferrer" class="socials"><i class="fab fa-medium-m"></i></a></span>
         </div>
-        </div>
-    </div>
-    <div id="display">
-      <div><h1 style="position: relative"><br></h1><div class="projects" id="pages">
+        </div></div></header>
+<div id="display"><div><h1>Explore</h1><div class="projects" id="pages">
 			<!--
             <a href="Papers.html">
             <section>
@@ -111,33 +104,8 @@
                 </div>
             </section>
             </a>--></div></div><div id="footer">
-        <a href="https://calendly.com/ange-valli-maldonado/new-meeting" target="_blank">Open for new opportunities, let's chat!</a>
-      </div>
-    </div>
-    <script type="text/javascript">
-      setTimeout(function() {
-        document.getElementById("loading").classList.add("animated");
-        document.getElementById("loading").classList.add("fadeOut");
-        document.getElementById("loading_black").classList.add("animated");
-        document.getElementById("loading_black").classList.add("fadeOut");
-        setTimeout(function() {
-          document.getElementById("loading").classList.remove("animated");
-          document.getElementById("loading").classList.remove("fadeOut");
-          document.getElementById("loading").style.display = "none";
-          document.getElementById("loading_black").classList.remove("animated");
-          document.getElementById("loading_black").classList.remove("fadeOut");
-          document.getElementById("loading_black").style.display = "none";
-        }, 800);
-      }, 1500);
-    </script>
-  
-
-<script>const pages = new MagicGrid({
-      container: "#pages",
-      animate: false,
-      gutter: 30, // default gutter size
-      static: true,
-      useMin: false,
-      maxColumns: 2,
-      useTransform: true
-    });$("document").ready(() => {pages.listen();});</script></body></html>
+        <a href="https://calendly.com/ange-valli-maldonado/new-meeting" target="_blank" rel="noopener noreferrer">Open for new opportunities, let's chat!</a>
+      </div></div>
+  </main>
+</body>
+</html>

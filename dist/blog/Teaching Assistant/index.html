@@ -1,84 +1,180 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Teaching Assistant</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../../index.css"></head>
-  <body>
-    <div id="loading">
-      <div id="spinner"></div>
-    </div>
-    <a href="/" class="go_back"><i class="fas fa-arrow-left"></i></a>
-    <div id="background_overlay"></div>
-    <div id="background" style="background: url(top_image.jpeg) center;"></div>
-    <table id="profile_blog">
-      <tbody>
-        <tr>
-          <td style="width:8vw;"><div id="profile_img_blog"></div></td>
-          <td style="width:52vw;">
-            <div id="username_blog"></div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <div id="blog-display">
-      <h1 id="blog_title">Teaching Assistant</h1>
-      <h2 id="blog_sub_title">2023/2024</h2>
-      <div id="blog"><p id="para_0_original">
-	  Computer Science & Mathematics Bachelor
-	  <ul>
-		<li><u>2<sup>nd</sup> year</u> : Databases course. <br>
-		Theory, relational algebra, PostgreSQL and introduction to pandas in Python.</li>
-		<br>
-		<li><u>3<sup>rd</sup> year</u> : Introduction to Artificial Intelligence course. <br>
-		Search in game trees and graphs, introduction to heuristics, introduction to expert systems.
-			<ul>
-			<li><i> Algorithms :</i> MinMax, AlphaBeta pruning and variants (NegAlphaBeta, Iterative Deepening), Djisktra, A/A*. Forward chaining, backward chaining and mixed chaining.</li>
-			<li><i> Problems:</i> missionaries and canibals, two water jug puzzle, traveling salesperson problem.</li>
-			<li><i>Games: </i> Awele, Fifteen puzzle. </li>
-			</ul>
-			Final project on implementing <a href="http://www.marksteeregames.com/King_and_Courtesan_rules.pdf" target="_blank">King and Courtesan game made by Mark Steere</a> (see my GitHub). I organised a tournament between all players made by the students.<br>
-			Programming language : Java 11.</li></p></div>
-		</ul>
-      <!-- <h3 id="blog_sub_title">2024/2025</h3> -->
-      <div id="blog"><p id="para_0_original"></p></div>
-    <script type="text/javascript">
-      setTimeout(function() {
-        document.getElementById("loading").classList.add("animated");
-        document.getElementById("loading").classList.add("fadeOut");
-        setTimeout(function() {
-          document.getElementById("loading").classList.remove("animated");
-          document.getElementById("loading").classList.remove("fadeOut");
-          document.getElementById("loading").style.display = "none";
-        }, 800);
-      }, 1500);
-      $.getJSON("../../config.json", function(user) {
-        var icon = document.createElement("link");
-        icon.setAttribute("rel", "icon");
-        icon.setAttribute("href", user[0].userimg);
-        icon.setAttribute("type", "image/png");
-        document.getElementsByTagName("head")[0].appendChild(icon);
-        document.getElementById(
-          "profile_img_blog"
-        ).style.background = `url('${user[0].userimg}') center center`;
-        document.getElementById(
-          "username_blog"
-        ).innerHTML = `<span style="display:${
-          user[0].name == null || !user[0].name ? "none" : "block"
-        };">${user[0].name}</span>@${user[0].username}<b id="blog_time"></b>`;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaching Assistant | Ange Valli</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+  <link rel="stylesheet" href="../../index.css">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/38351742?v=4" type="image/png">
+</head>
+<body class="">
+  <a href="../../index.html" class="go_back" aria-label="Back to home"><span aria-hidden="true">&#8592;</span></a>
+  <div id="background" aria-hidden="true"></div>
+  <div id="background_overlay" aria-hidden="true"></div>
+  <main id="blog-display">
+<h1 id="blog_title">Teaching Assistant</h1>
 
-        if ((user[0].theme = "dark.css")) {
-          document.querySelector("#background_overlay").style.background =
-            "linear-gradient(0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.1))";
-        } else {
-          document.querySelector("#background_overlay").style.background =
-            "linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1))";
-        }
-      });
-    </script>
-  
+    <!-- ==================== 2024/2025 ==================== -->
 
-</body></html>
+    <section class="teaching-year">
+
+      <h2 class="year-title">2024/2025</h2>
+
+      <div class="teaching-program">
+        <h3 class="program-title">
+          Mathematics &amp; Computer Science Bachelor
+        </h3>
+
+        <ul class="course-list">
+          <li>
+            <u>1<sup>st</sup> year</u>:
+            Introduction to modular programming in C++ course.
+          </li>
+        </ul>
+      </div>
+
+      <div class="teaching-program">
+        <h3 class="program-title">
+          Computer Science Methods Applied to Business Management
+        </h3>
+
+        <ul class="course-list">
+          <li>
+            <u>1<sup>st</sup> year Master</u>:
+            Operations Research course.
+
+            <p class="course-description">
+              Simplex algorithm, duality principle,
+              linear programming and game theory.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="teaching-program">
+        <h3 class="program-title">
+          Quantum and Distributed Computer Science
+        </h3>
+
+        <ul class="course-list">
+          <li>
+            <u>1<sup>st</sup> year Master</u>:
+            Modelling and optimisation of discrete systems course.
+
+            <p class="course-description">
+              Simplex algorithm, linear programming.
+            </p>
+          </li>
+
+          <li>
+            <u>1<sup>st</sup> year Master</u>:
+            Games, learning and optimisation of complex systems course.
+
+            <p class="course-description">
+              Game theory, KKT optimality conditions,
+              introduction to generative adversarial networks (GANs)
+              and link to game theory:
+              <a href="https://drive.google.com/file/d/1FU7hKubrRYwRInqpnwQXE6QE6KEWECrl/view?usp=sharing"
+                 target="_blank" rel="noopener noreferrer">
+                Slides
+              </a>
+            </p>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- ==================== 2023/2024 ==================== -->
+
+    <section class="teaching-year">
+
+      <h2 class="year-title">2023/2024</h2>
+
+      <div class="teaching-program">
+        <h3 class="program-title">
+          Mathematics &amp; Computer Science Bachelor
+        </h3>
+
+        <ul class="course-list">
+
+          <li>
+            <u>2<sup>nd</sup> year</u>:
+            Databases course with
+            <a href="https://www.lri.fr/~groz/">
+              Prof. Benoît Groz
+            </a>
+            and
+            <a href="https://www.lri.fr/~sais/">
+              Prof. Fatiha Sais
+            </a>.
+
+            <p class="course-description">
+              Theory, relational algebra, PostgreSQL
+              and introduction to pandas in Python.
+            </p>
+          </li>
+
+          <li>
+            <u>3<sup>rd</sup> year</u>:
+            Introduction to Artificial Intelligence course with
+            <a href="https://www.lri.fr/~chatalic/">
+              Prof. Philippe Chatalic
+            </a>.
+
+            <p class="course-description">
+              Search in game trees and graphs,
+              introduction to heuristics,
+              introduction to expert systems.
+            </p>
+
+            <ul>
+              <li>
+                <i>Algorithms:</i>
+                MinMax, AlphaBeta pruning and variants
+                (NegAlphaBeta, Iterative Deepening),
+                Dijkstra, A/A*.
+                Forward chaining, backward chaining
+                and mixed chaining.
+              </li>
+
+              <li>
+                <i>Problems:</i>
+                missionaries and cannibals,
+                two water jug puzzle,
+                traveling salesperson problem.
+                (<a href="https://github.com/AngeValli/Various_java_problems_and_games_solving"
+                    target="_blank" rel="noopener noreferrer">see my GitHub</a>)
+              </li>
+
+              <li>
+                <i>Games:</i>
+                Awele, Fifteen puzzle.
+              </li>
+            </ul>
+
+            <p class="course-description">
+              Final project on implementing
+              <a href="http://www.marksteeregames.com/King_and_Courtesan_rules.pdf"
+                 target="_blank" rel="noopener noreferrer">
+                King and Courtesan game made by Mark Steere
+              </a>
+              (<a href="https://github.com/AngeValli/King_and_Courtesan_game"
+                  target="_blank" rel="noopener noreferrer">see my GitHub</a>).
+              I organised a tournament between all players
+              made by the students.
+            </p>
+
+            <p class="course-description">
+              Programming language: Java 11.
+            </p>
+
+          </li>
+        </ul>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>

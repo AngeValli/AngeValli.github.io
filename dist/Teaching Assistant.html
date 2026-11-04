@@ -1,71 +1,180 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AngeValli</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
-    <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/38351742?v=4" type="image/png"></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaching Assistant | Ange Valli</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/38351742?v=4" type="image/png">
+</head>
+<body class="">
+  <a href="index.html" class="go_back" aria-label="Back to home"><span aria-hidden="true">&#8592;</span></a>
+  <div id="background" aria-hidden="true"></div>
+  <div id="background_overlay" aria-hidden="true"></div>
+  <main id="blog-display">
+<h1 id="blog_title">Teaching Assistant</h1>
 
-  <body>
-    <div id="loading_black">
-    <div id="loading">
-      <div id="spinner"></div>
-    </div>
-    </div>
-    <div id="profile_background"></div>
-    <div id="profile">
-      <div id="profile_img" onclick="location.href='index.html';" style="background: url(https://avatars.githubusercontent.com/u/38351742?v=4) center;"></div>
-      <div id="username"><span style="display:block;">Ange Valli (Ángel Valli Maldonado)</span><a href="https://github.com/AngeValli">@AngeValli</a></div>
-      <div id="userbio" style="display: block;">PhD Candidate in Applied Mathematics</div>
-      <div id="about">
-        <span style="display:block;"><i class="fas fa-users"></i> &nbsp; Université Paris-Saclay / CentraleSupélec</span>
-        <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
-        <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a href="https://angevalli.github.io/">https://angevalli.github.io/</a></span>
-        <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Paris</span>
-        <span style="display:none;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
-        <div class="socials">
-        <span style="display:block;"><a href="https://www.twitter.com/AVE13230" target="_blank" class="socials"><i class="fab fa-twitter"></i></a></span>
-        <span style="display:none !important;"><a href="https://www.dribbble.com/null" target="_blank" class="socials"><i class="fab fa-dribbble"></i></a></span>
-        <span style="display:block;"><a href="https://www.linkedin.com/in/ange-valli-maldonado/" target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
-        <span style="display:none !important;"><a href="https://www.medium.com/@null/" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span>
-        </div>
-        </div>
-    </div>
-    <div id="display">
-      <div><h1 style="position: relative">Teaching Assistant</h1><div class="projects" id="page_4"></div></div><div id="footer">
-        <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
-        <br>
-        <a href="https://github.com/smrfeld" target="_blank">remixed off-world by an e.t.</a>
+    <!-- ==================== 2024/2025 ==================== -->
+
+    <section class="teaching-year">
+
+      <h2 class="year-title">2024/2025</h2>
+
+      <div class="teaching-program">
+        <h3 class="program-title">
+          Mathematics &amp; Computer Science Bachelor
+        </h3>
+
+        <ul class="course-list">
+          <li>
+            <u>1<sup>st</sup> year</u>:
+            Introduction to modular programming in C++ course.
+          </li>
+        </ul>
       </div>
-    </div>
-    <script type="text/javascript">
-      setTimeout(function() {
-        document.getElementById("loading").classList.add("animated");
-        document.getElementById("loading").classList.add("fadeOut");
-        document.getElementById("loading_black").classList.add("animated");
-        document.getElementById("loading_black").classList.add("fadeOut");
-        setTimeout(function() {
-          document.getElementById("loading").classList.remove("animated");
-          document.getElementById("loading").classList.remove("fadeOut");
-          document.getElementById("loading").style.display = "none";
-          document.getElementById("loading_black").classList.remove("animated");
-          document.getElementById("loading_black").classList.remove("fadeOut");
-          document.getElementById("loading_black").style.display = "none";
-        }, 800);
-      }, 1500);
-    </script>
-  
 
-<script>const page_4 = new MagicGrid({
-      container: "#page_4",
-      animate: false,
-      gutter: 30, // default gutter size
-      static: true,
-      useMin: false,
-      maxColumns: 1,
-      useTransform: true
-    });$("document").ready(() => {page_4.listen();});</script></body></html>
+      <div class="teaching-program">
+        <h3 class="program-title">
+          Computer Science Methods Applied to Business Management
+        </h3>
+
+        <ul class="course-list">
+          <li>
+            <u>1<sup>st</sup> year Master</u>:
+            Operations Research course.
+
+            <p class="course-description">
+              Simplex algorithm, duality principle,
+              linear programming and game theory.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="teaching-program">
+        <h3 class="program-title">
+          Quantum and Distributed Computer Science
+        </h3>
+
+        <ul class="course-list">
+          <li>
+            <u>1<sup>st</sup> year Master</u>:
+            Modelling and optimisation of discrete systems course.
+
+            <p class="course-description">
+              Simplex algorithm, linear programming.
+            </p>
+          </li>
+
+          <li>
+            <u>1<sup>st</sup> year Master</u>:
+            Games, learning and optimisation of complex systems course.
+
+            <p class="course-description">
+              Game theory, KKT optimality conditions,
+              introduction to generative adversarial networks (GANs)
+              and link to game theory:
+              <a href="https://drive.google.com/file/d/1FU7hKubrRYwRInqpnwQXE6QE6KEWECrl/view?usp=sharing"
+                 target="_blank" rel="noopener noreferrer">
+                Slides
+              </a>
+            </p>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- ==================== 2023/2024 ==================== -->
+
+    <section class="teaching-year">
+
+      <h2 class="year-title">2023/2024</h2>
+
+      <div class="teaching-program">
+        <h3 class="program-title">
+          Mathematics &amp; Computer Science Bachelor
+        </h3>
+
+        <ul class="course-list">
+
+          <li>
+            <u>2<sup>nd</sup> year</u>:
+            Databases course with
+            <a href="https://www.lri.fr/~groz/">
+              Prof. Benoît Groz
+            </a>
+            and
+            <a href="https://www.lri.fr/~sais/">
+              Prof. Fatiha Sais
+            </a>.
+
+            <p class="course-description">
+              Theory, relational algebra, PostgreSQL
+              and introduction to pandas in Python.
+            </p>
+          </li>
+
+          <li>
+            <u>3<sup>rd</sup> year</u>:
+            Introduction to Artificial Intelligence course with
+            <a href="https://www.lri.fr/~chatalic/">
+              Prof. Philippe Chatalic
+            </a>.
+
+            <p class="course-description">
+              Search in game trees and graphs,
+              introduction to heuristics,
+              introduction to expert systems.
+            </p>
+
+            <ul>
+              <li>
+                <i>Algorithms:</i>
+                MinMax, AlphaBeta pruning and variants
+                (NegAlphaBeta, Iterative Deepening),
+                Dijkstra, A/A*.
+                Forward chaining, backward chaining
+                and mixed chaining.
+              </li>
+
+              <li>
+                <i>Problems:</i>
+                missionaries and cannibals,
+                two water jug puzzle,
+                traveling salesperson problem.
+                (<a href="https://github.com/AngeValli/Various_java_problems_and_games_solving"
+                    target="_blank" rel="noopener noreferrer">see my GitHub</a>)
+              </li>
+
+              <li>
+                <i>Games:</i>
+                Awele, Fifteen puzzle.
+              </li>
+            </ul>
+
+            <p class="course-description">
+              Final project on implementing
+              <a href="http://www.marksteeregames.com/King_and_Courtesan_rules.pdf"
+                 target="_blank" rel="noopener noreferrer">
+                King and Courtesan game made by Mark Steere
+              </a>
+              (<a href="https://github.com/AngeValli/King_and_Courtesan_game"
+                  target="_blank" rel="noopener noreferrer">see my GitHub</a>).
+              I organised a tournament between all players
+              made by the students.
+            </p>
+
+            <p class="course-description">
+              Programming language: Java 11.
+            </p>
+
+          </li>
+        </ul>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>
